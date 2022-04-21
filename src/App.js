@@ -26,7 +26,7 @@ const App = () => {
   const [mapZoom, setMapZoom] = useState(3);
 
   useEffect(() => {
-    fetch("https://disease.sh/v3/covid-19/all")
+    fetch("https://disease.sh/v3/covid-19/all") //Issue on Data Fetching. disease.sh is down. 
       .then((response) => response.json())
       .then((data) => {
         setCountryInfo(data);
